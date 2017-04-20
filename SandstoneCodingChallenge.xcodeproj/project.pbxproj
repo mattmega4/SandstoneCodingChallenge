@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185640360B5C2BCA532E0C99 /* Pods_SandstoneCodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F1FB6998C125E7EABC58A6A /* Pods_SandstoneCodingChallenge.framework */; };
 		293EBB7B1EA97AA8003F0A61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293EBB7A1EA97AA8003F0A61 /* AppDelegate.swift */; };
-		293EBB7D1EA97AA8003F0A61 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293EBB7C1EA97AA8003F0A61 /* ViewController.swift */; };
 		293EBB801EA97AA8003F0A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293EBB7E1EA97AA8003F0A61 /* Main.storyboard */; };
 		293EBB821EA97AA8003F0A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293EBB811EA97AA8003F0A61 /* Assets.xcassets */; };
 		293EBB851EA97AA8003F0A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293EBB831EA97AA8003F0A61 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09CD7AF2EC711E1CB8B0B8D7 /* Pods-SandstoneCodingChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandstoneCodingChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-SandstoneCodingChallenge/Pods-SandstoneCodingChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		293EBB771EA97AA8003F0A61 /* SandstoneCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandstoneCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		293EBB7A1EA97AA8003F0A61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		293EBB7C1EA97AA8003F0A61 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		293EBB7F1EA97AA8003F0A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		293EBB811EA97AA8003F0A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		293EBB841EA97AA8003F0A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293EBB861EA97AA8003F0A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F1FB6998C125E7EABC58A6A /* Pods_SandstoneCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandstoneCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF39F987513E3F03AC599AAA /* Pods-SandstoneCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandstoneCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SandstoneCodingChallenge/Pods-SandstoneCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185640360B5C2BCA532E0C99 /* Pods_SandstoneCodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,8 @@
 			children = (
 				293EBB791EA97AA8003F0A61 /* SandstoneCodingChallenge */,
 				293EBB781EA97AA8003F0A61 /* Products */,
+				9F072F280B20D20C4BB066DC /* Pods */,
+				2F8988C46A94F763C90C93E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,38 +60,37 @@
 			isa = PBXGroup;
 			children = (
 				293EBB8F1EA97AC2003F0A61 /* Model */,
-				293EBB8E1EA97AC0003F0A61 /* New Group2 */,
-				293EBB8D1EA97ABE003F0A61 /* New Group1 */,
-				293EBB8C1EA97ABC003F0A61 /* New Group */,
-				293EBB7A1EA97AA8003F0A61 /* AppDelegate.swift */,
-				293EBB7C1EA97AA8003F0A61 /* ViewController.swift */,
-				293EBB7E1EA97AA8003F0A61 /* Main.storyboard */,
-				293EBB811EA97AA8003F0A61 /* Assets.xcassets */,
-				293EBB831EA97AA8003F0A61 /* LaunchScreen.storyboard */,
-				293EBB861EA97AA8003F0A61 /* Info.plist */,
+				293EBB8E1EA97AC0003F0A61 /* View */,
+				293EBB8D1EA97ABE003F0A61 /* Controller */,
+				293EBB8C1EA97ABC003F0A61 /* Supporting Files */,
 			);
 			path = SandstoneCodingChallenge;
 			sourceTree = "<group>";
 		};
-		293EBB8C1EA97ABC003F0A61 /* New Group */ = {
+		293EBB8C1EA97ABC003F0A61 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				293EBB7A1EA97AA8003F0A61 /* AppDelegate.swift */,
+				293EBB811EA97AA8003F0A61 /* Assets.xcassets */,
+				293EBB861EA97AA8003F0A61 /* Info.plist */,
 			);
-			name = "New Group";
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		293EBB8D1EA97ABE003F0A61 /* New Group1 */ = {
+		293EBB8D1EA97ABE003F0A61 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = "New Group1";
+			name = Controller;
 			sourceTree = "<group>";
 		};
-		293EBB8E1EA97AC0003F0A61 /* New Group2 */ = {
+		293EBB8E1EA97AC0003F0A61 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				293EBB7E1EA97AA8003F0A61 /* Main.storyboard */,
+				293EBB831EA97AA8003F0A61 /* LaunchScreen.storyboard */,
 			);
-			name = "New Group2";
+			name = View;
 			sourceTree = "<group>";
 		};
 		293EBB8F1EA97AC2003F0A61 /* Model */ = {
@@ -96,6 +100,23 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		2F8988C46A94F763C90C93E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F1FB6998C125E7EABC58A6A /* Pods_SandstoneCodingChallenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F072F280B20D20C4BB066DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF39F987513E3F03AC599AAA /* Pods-SandstoneCodingChallenge.debug.xcconfig */,
+				09CD7AF2EC711E1CB8B0B8D7 /* Pods-SandstoneCodingChallenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +124,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 293EBB891EA97AA8003F0A61 /* Build configuration list for PBXNativeTarget "SandstoneCodingChallenge" */;
 			buildPhases = (
+				6ACA28C742C45B8C59B01392 /* [CP] Check Pods Manifest.lock */,
 				293EBB731EA97AA8003F0A61 /* Sources */,
 				293EBB741EA97AA8003F0A61 /* Frameworks */,
 				293EBB751EA97AA8003F0A61 /* Resources */,
+				DEE64944775CE4CE13235300 /* [CP] Embed Pods Frameworks */,
+				BEFD548BFB6032BE2E19B9A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,12 +188,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6ACA28C742C45B8C59B01392 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEFD548BFB6032BE2E19B9A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SandstoneCodingChallenge/Pods-SandstoneCodingChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE64944775CE4CE13235300 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SandstoneCodingChallenge/Pods-SandstoneCodingChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		293EBB731EA97AA8003F0A61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				293EBB7D1EA97AA8003F0A61 /* ViewController.swift in Sources */,
 				293EBB7B1EA97AA8003F0A61 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +364,7 @@
 		};
 		293EBB8A1EA97AA8003F0A61 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF39F987513E3F03AC599AAA /* Pods-SandstoneCodingChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
@@ -306,6 +378,7 @@
 		};
 		293EBB8B1EA97AA8003F0A61 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09CD7AF2EC711E1CB8B0B8D7 /* Pods-SandstoneCodingChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K8YZSQZRNW;
