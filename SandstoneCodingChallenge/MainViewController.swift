@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
         
         imgView.autoPin(toTopLayoutGuideOf: self, withInset: 25.0)
         imgView.backgroundColor = .lightGray
-        imgView.autoSetDimension(.height, toSize: 300.0)
+        imgView.autoSetDimension(.height, toSize: 200.0)
         //        imgView.autoSetDimension(.width, toSize: 350.0)
         //        imgView.autoAlignAxis(.vertical, toSameAxisOf: view) // This should be .horizontal?
         
@@ -69,6 +69,7 @@ class MainViewController: UIViewController {
         lineLenghLabel.autoPinEdge(.left, to: .right, of: decreaseLineSizeButton, withOffset: 10.0)
         lineLenghLabel.autoPinEdge(.right, to: .left, of: increaseLineSizeTextField, withOffset: 10.0)
         lineLenghLabel.autoSetDimension(.height, toSize: 30.0)
+        lineLenghLabel.autoAlignAxis(.vertical, toSameAxisOf: view) // ?
         
         increaseLineSizeTextField.autoPinEdge(.top, to: .bottom, of: chooseFromPhotoLibraryButton, withOffset: 25.0)
         increaseLineSizeTextField.autoPinEdge(.top, to: .bottom, of: clearButton, withOffset: 25.0)
