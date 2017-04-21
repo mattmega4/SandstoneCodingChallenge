@@ -9,12 +9,12 @@
 import UIKit
 import PureLayout
 
-class MainViewController: UIViewController, UITextFieldDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class MainViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     
    
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var drawVw: UIView!
+
    
     
     @IBOutlet weak var chooseFromPhotoLibraryButton: UIButton!
@@ -22,19 +22,58 @@ class MainViewController: UIViewController, UITextFieldDelegate, UINavigationCon
     @IBOutlet weak var takePhotoButton: UIButton!
     
     @IBOutlet weak var decreaseLineSizeButton: UIButton!
-    @IBOutlet weak var lineSizeTextField: UITextField!
+    @IBOutlet weak var lineLenghLabel: UILabel!
+
     @IBOutlet weak var increaseLineSizeTextField: UIButton!
+    
+    let path = UIBezierPath()
+    let shapeLayer = CAShapeLayer()
     
     var imagePicker: UIImagePickerController!
     
+    var endingPoint = 25
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         settingUpViewUsingAPI()
+        drawLineFromPoint(end: endingPoint, inView: imgView)
         
     }
+    
+
+    func drawLineFromPoint(end: Int, inView view: UIView) {
+        
+        
+        
+        //design the path
+        
+        path.move(to: CGPoint(x: 25, y: 150))
+        path.addLine(to: CGPoint(x: end, y: 150))
+
+        
+        //design path in layer
+        
+        shapeLayer.path = path.cgPath
+        shapeLayer.strokeColor = UIColor.blue.cgColor
+        shapeLayer.lineWidth = 5.0
+        
+        
+        view.layer.addSublayer(shapeLayer)
+        
+        
+        let currentLineLength = end - 25
+        
+        lineLenghLabel.text = "\(currentLineLength) Pixels Long"
+        print(endingPoint)
+        print("bar")
+        
+    }
+    
+    
+
+    
     
     
     
@@ -67,14 +106,7 @@ class MainViewController: UIViewController, UITextFieldDelegate, UINavigationCon
         imgView.autoPinEdge(toSuperviewEdge: .left, withInset: 20.0)
         imgView.autoPinEdge(toSuperviewEdge: .right, withInset: 20.0)
         
-//        drawVw.autoPin(toTopLayoutGuideOf: self, withInset: 25.0)
-//        drawVw.backgroundColor = .clear
-//        drawVw.autoSetDimension(.height, toSize: 200.0)
-//        drawVw.autoPinEdge(toSuperviewEdge: .left, withInset: 20.0)
-//        drawVw.autoPinEdge(toSuperviewEdge: .right, withInset: 20.0)
-        
-        
-        
+
         
         let topButtonArray: NSArray = [chooseFromPhotoLibraryButton, clearButton, takePhotoButton]
         topButtonArray.autoDistributeViews(along: .horizontal, alignedTo: .horizontal, withFixedSpacing: 10.0, insetSpacing: true, matchedSizes: true)
@@ -84,28 +116,28 @@ class MainViewController: UIViewController, UITextFieldDelegate, UINavigationCon
         clearButton.autoPinEdge(.top, to: .bottom, of: imgView, withOffset: 25.0)
         takePhotoButton.autoPinEdge(.top, to: .bottom, of: imgView, withOffset: 25.0)
         
-//        chooseFromPhotoLibraryButton.autoPinEdge(.top, to: .bottom, of: drawVw, withOffset: 25.0)
+
         
         decreaseLineSizeButton.autoPinEdge(.top, to: .bottom, of: chooseFromPhotoLibraryButton, withOffset: 25.0)
         decreaseLineSizeButton.autoPinEdge(.top, to: .bottom, of: clearButton, withOffset: 25.0)
         decreaseLineSizeButton.autoPinEdge(.top, to: .bottom, of: takePhotoButton, withOffset: 25.0)
         decreaseLineSizeButton.autoPinEdge(toSuperviewEdge: .left, withInset: 25.0)
-        decreaseLineSizeButton.autoPinEdge(.right, to: .left, of: lineSizeTextField, withOffset: 10.0)
+        decreaseLineSizeButton.autoPinEdge(.right, to: .left, of: lineLenghLabel, withOffset: 10.0)
         decreaseLineSizeButton.autoSetDimension(.height, toSize: 30.0)
         decreaseLineSizeButton.autoSetDimension(.width, toSize: 30.0)
         
-        lineSizeTextField.autoPinEdge(.top, to: .bottom, of: chooseFromPhotoLibraryButton, withOffset: 25.0)
-        lineSizeTextField.autoPinEdge(.top, to: .bottom, of: clearButton, withOffset: 25.0)
-        lineSizeTextField.autoPinEdge(.top, to: .bottom, of: takePhotoButton, withOffset: 25.0)
-        lineSizeTextField.autoPinEdge(.left, to: .right, of: decreaseLineSizeButton, withOffset: 10.0)
-        lineSizeTextField.autoPinEdge(.right, to: .left, of: increaseLineSizeTextField, withOffset: 10.0)
-        lineSizeTextField.autoSetDimension(.height, toSize: 30.0)
+        lineLenghLabel.autoPinEdge(.top, to: .bottom, of: chooseFromPhotoLibraryButton, withOffset: 25.0)
+        lineLenghLabel.autoPinEdge(.top, to: .bottom, of: clearButton, withOffset: 25.0)
+        lineLenghLabel.autoPinEdge(.top, to: .bottom, of: takePhotoButton, withOffset: 25.0)
+        lineLenghLabel.autoPinEdge(.left, to: .right, of: decreaseLineSizeButton, withOffset: 10.0)
+        lineLenghLabel.autoPinEdge(.right, to: .left, of: increaseLineSizeTextField, withOffset: 10.0)
+        lineLenghLabel.autoSetDimension(.height, toSize: 30.0)
         
         increaseLineSizeTextField.autoPinEdge(.top, to: .bottom, of: chooseFromPhotoLibraryButton, withOffset: 25.0)
         increaseLineSizeTextField.autoPinEdge(.top, to: .bottom, of: clearButton, withOffset: 25.0)
         increaseLineSizeTextField.autoPinEdge(.top, to: .bottom, of: takePhotoButton, withOffset: 25.0)
         increaseLineSizeTextField.autoPinEdge(toSuperviewEdge: .right, withInset: 25.0)
-        increaseLineSizeTextField.autoPinEdge(.left, to: .right, of: lineSizeTextField, withOffset: 10.0)
+        increaseLineSizeTextField.autoPinEdge(.left, to: .right, of: lineLenghLabel, withOffset: 10.0)
         increaseLineSizeTextField.autoSetDimension(.height, toSize: 30.0)
         increaseLineSizeTextField.autoSetDimension(.width, toSize: 30.0)
         
@@ -114,6 +146,11 @@ class MainViewController: UIViewController, UITextFieldDelegate, UINavigationCon
     
     
 
+    
+
+    
+    
+    
     
     
     
@@ -142,9 +179,19 @@ class MainViewController: UIViewController, UITextFieldDelegate, UINavigationCon
     
     
     @IBAction func decreaseLineSizeButtonTapped(_ sender: UIButton) {
+        path.removeAllPoints()
+        endingPoint-=1
+        drawLineFromPoint(end: endingPoint, inView: imgView)
+        print(endingPoint)
+        print("away")
     }
     
     @IBAction func increaseLineSizeButtonTapped(_ sender: UIButton) {
+        path.removeAllPoints()
+        endingPoint+=1
+        drawLineFromPoint(end: endingPoint, inView: imgView)
+        print(endingPoint)
+        print("go")
     }
     
 }

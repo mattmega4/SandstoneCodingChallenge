@@ -61,13 +61,6 @@
                                     <action selector="decreaseLineSizeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oHD-72-89R"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ci0-Eb-5mr">
-                                <rect key="frame" x="139" y="403" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INm-zG-LM6">
                                 <rect key="frame" x="275" y="403" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -82,11 +75,13 @@
                                 <rect key="frame" x="33" y="60" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5f-ER-NgY">
-                                <rect key="frame" x="87" y="90" width="240" height="128"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enw-s9-wnd">
+                                <rect key="frame" x="139" y="403" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -94,10 +89,9 @@
                         <outlet property="chooseFromPhotoLibraryButton" destination="Y3T-Qx-Ved" id="gOp-a5-6Zl"/>
                         <outlet property="clearButton" destination="Ogo-dk-UB9" id="KTI-cq-mml"/>
                         <outlet property="decreaseLineSizeButton" destination="ELn-Ew-Gam" id="nUV-ji-aIi"/>
-                        <outlet property="drawVw" destination="K5f-ER-NgY" id="cWu-gs-SwX"/>
                         <outlet property="imgView" destination="JFW-bo-ikX" id="dBi-gU-fGQ"/>
                         <outlet property="increaseLineSizeTextField" destination="INm-zG-LM6" id="hCL-se-cVj"/>
-                        <outlet property="lineSizeTextField" destination="ci0-Eb-5mr" id="MMh-2S-78p"/>
+                        <outlet property="lineLenghLabel" destination="enw-s9-wnd" id="rlf-Pn-rJP"/>
                         <outlet property="takePhotoButton" destination="Bco-Dv-Xm6" id="WnC-t6-fpr"/>
                     </connections>
                 </viewController>
