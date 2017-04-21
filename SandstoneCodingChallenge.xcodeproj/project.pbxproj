@@ -12,6 +12,7 @@
 		293EBB801EA97AA8003F0A61 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293EBB7E1EA97AA8003F0A61 /* Main.storyboard */; };
 		293EBB821EA97AA8003F0A61 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293EBB811EA97AA8003F0A61 /* Assets.xcassets */; };
 		293EBB851EA97AA8003F0A61 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293EBB831EA97AA8003F0A61 /* LaunchScreen.storyboard */; };
+		298BF64E1EA97E2D00007E86 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298BF64D1EA97E2D00007E86 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		293EBB811EA97AA8003F0A61 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		293EBB841EA97AA8003F0A61 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		293EBB861EA97AA8003F0A61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		298BF64D1EA97E2D00007E86 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3F1FB6998C125E7EABC58A6A /* Pods_SandstoneCodingChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandstoneCodingChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF39F987513E3F03AC599AAA /* Pods-SandstoneCodingChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandstoneCodingChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SandstoneCodingChallenge/Pods-SandstoneCodingChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,7 +61,6 @@
 		293EBB791EA97AA8003F0A61 /* SandstoneCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				293EBB8F1EA97AC2003F0A61 /* Model */,
 				293EBB8E1EA97AC0003F0A61 /* View */,
 				293EBB8D1EA97ABE003F0A61 /* Controller */,
 				293EBB8C1EA97ABC003F0A61 /* Supporting Files */,
@@ -80,6 +81,7 @@
 		293EBB8D1EA97ABE003F0A61 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				298BF64D1EA97E2D00007E86 /* MainViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -91,13 +93,6 @@
 				293EBB831EA97AA8003F0A61 /* LaunchScreen.storyboard */,
 			);
 			name = View;
-			sourceTree = "<group>";
-		};
-		293EBB8F1EA97AC2003F0A61 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		2F8988C46A94F763C90C93E2 /* Frameworks */ = {
@@ -242,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				293EBB7B1EA97AA8003F0A61 /* AppDelegate.swift in Sources */,
+				298BF64E1EA97E2D00007E86 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +405,7 @@
 				293EBB8B1EA97AA8003F0A61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
